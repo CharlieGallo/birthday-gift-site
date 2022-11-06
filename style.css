@@ -1,0 +1,121 @@
+
+body {
+    font-family: 'Happy Monkey', cursive;
+    text-align: center; /* This will only effect inline elements */
+    color: #ffffff;
+    background: linear-gradient(#a2d2ff, #EFB0C9);
+    /* Check colour contrast on userway.org
+       Can add text-shadow to improve contrast. 
+    */
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3, h4, p {
+    text-shadow: 0 0 1px black;
+    /* text-shadow: offset V & H / blur weight / colour*/
+}
+
+#birthday-img {
+    width: 150px;
+    border-radius: 50%;
+    border: solid 5px #EFB0C9;
+}
+
+#bday-age {
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 15px 0 10px 0;
+}
+
+#bday-date {
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.gift-section {
+    margin-top: 50px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+/* Need to find which element has the biggest margin as that will be the one used. 
+
+Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+
+This does not happen on horizontal (left and right) margins! Only vertical (top and bottom) margins!*/
+
+.gift-ins {
+    margin-top: 0;
+}
+
+.gift-img {
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("../images/gift-cover.jpg");
+    /* background: linear-gradient(lightskyblue, white); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#gift-img-happy:hover {
+    background-image: url("../images/happy.gif");
+}
+
+#gift-img-excited:hover {
+    background-image: url("../images/excited.gif");
+}
+
+#gift-img-word:hover {
+    background-image: url("../images/genius.gif");
+}
+
+#gift-img-badass:hover {
+    background-image: url("../images/badass.gif");
+}
+
+#gift-img-cheers {
+    height: 200px;
+    background-position: top;
+
+}
+/* The above instructions take precedent over the 
+class 'gift-img' because an id is more specific */
+
+#gift-img-cheers:hover {
+    background-image: url("../images/cheers.gif");
+}
+
+#footer {
+    width: 400px;
+    margin: 40px auto 20px;
+    font-style: italic;
+}
+
+a {
+    color: white;
+}
+
+
+/* block element (p or div) - use 'margin: 0 auto' technique
+        - 'text-align: center' will not work 
+
+    inline elements - use display: flex technique
+        - e.g. inline elements within the header div
+*/
