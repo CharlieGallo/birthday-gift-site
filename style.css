@@ -1,12 +1,10 @@
 
 body {
     font-family: 'Happy Monkey', cursive;
-    text-align: center; /* This will only effect inline elements */
+    text-align: center; 
     color: #ffffff;
     background: linear-gradient(#a2d2ff, #EFB0C9);
-    /* Check colour contrast on userway.org
-       Can add text-shadow to improve contrast. 
-    */
+  
 }
 
 #header {
@@ -17,7 +15,7 @@ body {
 
 h1, h2, h3, h4, p {
     text-shadow: 0 0 1px black;
-    /* text-shadow: offset V & H / blur weight / colour*/
+    
 }
 
 #birthday-img {
@@ -42,20 +40,11 @@ h1, h2, h3, h4, p {
 
 .gift-section {
     margin-top: 50px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
 }
 
 .gift-title {
     margin-bottom: 10px;
 }
-
-/* Need to find which element has the biggest margin as that will be the one used. 
-
-Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
-
-This does not happen on horizontal (left and right) margins! Only vertical (top and bottom) margins!*/
 
 .gift-ins {
     margin-top: 0;
@@ -68,7 +57,6 @@ This does not happen on horizontal (left and right) margins! Only vertical (top 
     border: 6px solid white;
     border-radius: 10px;
     background-image: url("../images/gift-cover.jpg");
-    /* background: linear-gradient(lightskyblue, white); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -93,10 +81,8 @@ This does not happen on horizontal (left and right) margins! Only vertical (top 
 #gift-img-cheers {
     height: 200px;
     background-position: top;
-
 }
-/* The above instructions take precedent over the 
-class 'gift-img' because an id is more specific */
+
 
 #gift-img-cheers:hover {
     background-image: url("../images/cheers.gif");
@@ -113,9 +99,3 @@ a {
 }
 
 
-/* block element (p or div) - use 'margin: 0 auto' technique
-        - 'text-align: center' will not work 
-
-    inline elements - use display: flex technique
-        - e.g. inline elements within the header div
-*/
